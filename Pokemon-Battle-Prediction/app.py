@@ -1,13 +1,22 @@
-import streamlit as st
+mport streamlit as st
+import os
 from tensorflow.keras.models import load_model
-import joblib
 import numpy as np
 import pandas as pd
 from sklearn.preprocessing import OneHotEncoder, StandardScaler
 
+# Get the directory of the current script
+base_dir = os.path.dirname(os.path.abspath(__file__))
 
-model = load_model('/Machine-Learning-Projects/Pokemon-Battle-Prediction/my_model.h5')
-pokemon = pd.read_csv("/content/pokemon.csv")
+# Construct the correct paths to the CSV and model files
+pokemon_file_path = os.path.join(base_dir, "content", "pokemon.csv")
+model_file_path = os.path.join(base_dir, "my_model.h5")
+
+# Load the CSV file
+pokemon = pd.read_csv(pokemon_file_path)
+
+# Load the model
+model = load_model(model_file_path)
 
 # Function to predict
 @st.cache
