@@ -5,8 +5,9 @@ import numpy as np
 import pandas as pd
 from sklearn.preprocessing import OneHotEncoder, StandardScaler
 
-model = load_model('my_model.h5')
-pokemon = pd.read_csv("/content/Pokemon/pokemon.csv")
+
+model = load_model('/Machine-Learning-Projects/Pokemon-Battle-Prediction/my_model.h5')
+pokemon = pd.read_csv("/content/pokemon.csv")
 
 # Function to predict
 @st.cache
