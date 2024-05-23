@@ -34,8 +34,8 @@ pokemon_features = np.hstack([stats, legendary, encoded_types])
 pokemon_id_to_features = dict(zip(pokemon['#'], pokemon_features))
 
 # Function to predict
-@st.cache
-def predict(model, Pokemon1_id, Pokemon2_id):
+@st.cache_resource
+def predict(_model, Pokemon1_id, Pokemon2_id):
     Pokemon1_features = pokemon_id_to_features[Pokemon1_id]
     Pokemon2_features = pokemon_id_to_features[Pokemon2_id]
     battle_features = np.hstack([Pokemon1_features, Pokemon2_features])
