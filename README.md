@@ -16,7 +16,7 @@
 
 <p align="left">This project was made using the following technologies & sources<br><br>
 - <img height="20" src="https://cdn4.iconfinder.com/data/icons/logos-and-brands/512/189_Kaggle_logo_logos-512.png">
-Kaggle Data Set used: [Pokemon- Weedle's Cave](https://www.kaggle.com/datasets/terminus7/pokemon-challenge/)
+Kaggle Data Set used: <a href= "https://www.kaggle.com/datasets/terminus7/pokemon-challenge/"> Pokemon- Weedle's Cave </a>
 <br>
 - <img height="20" src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/Tensorflow_logo.svg/1200px-Tensorflow_logo.svg.png">
 Tensorflow was used for training the model   <br>
