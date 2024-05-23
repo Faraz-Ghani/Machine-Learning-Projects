@@ -1,3 +1,6 @@
 tensorflow
 joblib
 scikit-learn
+pandas
+numpy
+keras
