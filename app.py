@@ -10,10 +10,10 @@ import joblib
 base_dir = os.path.dirname(os.path.abspath(__file__))
 
 # Construct the correct paths to the CSV, model, and scaler files
-pokemon_file_path = "Pokemon-Battle-Prediction/content/pokemon.csv"
-model_file_path = "Pokemon-Battle-Prediction/etc/my_model.keras"
-encoder_path = "Pokemon-Battle-Prediction/etc/one_hot_encoder.pkl"
-scaler_path = "Pokemon-Battle-Prediction/etc/standard_scaler.pkl"
+pokemon_file_path = "content/pokemon.csv"
+model_file_path = "etc/my_model.keras"
+encoder_path = "etc/one_hot_encoder.pkl"
+scaler_path = "etc/standard_scaler.pkl"
 
 # Load the CSV file
 pokemon = pd.read_csv(pokemon_file_path)
